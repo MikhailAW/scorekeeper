@@ -2,13 +2,13 @@ const p1 = {
     score: 0,
     button: document.querySelector('#p1Button'),
     display: document.querySelector('#p1Display')
-}
+};
 
 const p2 = {
     score: 0,
     button: document.querySelector('#p2Button'),
     display: document.querySelector('#p2Display')
-}
+};
 
 const resetButton = document.querySelector('#resetButton');
 const winningScoreSelect = document.querySelector('#playto');
@@ -27,7 +27,7 @@ function updateScores(player, opponent) {
         }
         player.display.textContent = player.score;
     }
-}
+};
 
 p1.button.addEventListener('click', function () {
     updateScores(p1, p2)
@@ -52,4 +52,4 @@ function reset() {
         p.display.classList.remove('has-text-success', 'has-text-danger');
         p.button.disabled = false;
     }
-}
+};
